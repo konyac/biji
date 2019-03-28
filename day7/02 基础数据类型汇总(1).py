@@ -8,17 +8,17 @@ str  int
 '''
 list:
 '''
-lis = [11,22,33,44,55]
+lis = [11, 22, 33, 44, 55]
 # for i in range(len(lis)):
 #     print(i)       # i = 0              i = 1               i = 2
 #     del lis[i]
 #     print(lis)  #  [11,22,33,44,55]   [22, 44, 55]          [22, 44]
 
-#第一种
+# 第一种
 # lis = lis[::2]
 # print(lis)
 
-#第二种
+# 第二种
 # l1 = []
 # for i in lis:
 #     if lis.index(i) % 2 == 0:
@@ -27,20 +27,21 @@ lis = [11,22,33,44,55]
 # print(lis)
 
 # lis = [11,22,33,44,55]
-# # for i in range(len(lis)-1,-1,-1):
-# #     if i % 2 == 1:
-# #         print(i)
-# #         del lis[i]
-# #         print(lis)
-# # print(lis)
+# for i in range(len(lis)-1,-1,-1): # 4 3 2 1 0
+#     if i % 2 == 1:
+#         print(i)
+#         del lis[i]
+#         print(lis)
+# print(lis)
 
 # dic = dict.fromkeys([1,2,3],'春哥')
 # print(dic)
 # dic = dict.fromkeys([1,2,3],[])
 # print(dic)  # {1: [], 2: [], 3: []}
-# dic[1].append('袁姐')
+# print(dic[1])
+# dic[2].append('袁姐')
 # print(dic)
-# dic[2].extend('二哥')
+# dic[2].extend('二哥') #迭代增加
 # print(dic)
 
 
@@ -49,7 +50,7 @@ lis = [11,22,33,44,55]
 # l3 = l1
 # l3.append('a')
 # print(l1,l2,l3)
-
+#
 # dic = {'k1':'v1','k2':'v2','a3':'v3'}
 # dic1 = {}
 #
@@ -69,7 +70,7 @@ lis = [11,22,33,44,55]
 # 转化成bool值
 # 0 ''  [] () {} set()
 
-#元祖  如果元祖里面只有一个元素且不加,那此元素是什么类型，就是什么类型。
+# 元祖  如果元祖里面只有一个元素且不加,那此元素是什么类型，就是什么类型。
 # tu1 = (1)
 # tu2 = (1,)
 # print(tu1,type(tu1))
@@ -83,3 +84,10 @@ lis = [11,22,33,44,55]
 # print(dic)
 
 
+# l1 = [11, 22, 33, 44, 55]
+# l2 = []
+#
+# for i in range(0, len(l1)):
+#     if i % 2 == 0:
+#         l2.append(l1[i])
+# print(l2)
