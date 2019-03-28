@@ -25,7 +25,11 @@ bool
 dict
     1,fromkeys()
 
+
+
+
 tuple
+
 2，集合set
 3，深浅copy
 
